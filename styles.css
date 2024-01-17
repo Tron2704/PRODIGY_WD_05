@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather&family=Poppins&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1f306e;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: #553772;
+    max-width: 600px;
+    height: auto;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 12px 12px 2px 1px rgba(155, 139, 228, 0.2);
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-form img {
+    height: 40px;
+    width: 40px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 20px;
+    border: 2px solid #f5487f;
+    background-color: #8f3b76;
+    color: antiquewhite;
+    border-radius: 15px;
+    font-size: 1rem;
+    height: 60px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.search-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+    background-color: #8f3b76;
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+
+.search-btn:hover {
+    background-color: #f5487f;
+}
+
+.city-date {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    font-family: 'Merriweather', serif;
+}
+
+.city-date .city {
+    font-size: 2rem;
+    color: antiquewhite;
+}
+
+
+.city-date .date {
+    padding: 6px 12px;
+    border-radius: 15px;
+    color: antiquewhite;
+}
+
+.description-text {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.temperaturedisplay {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: antiquewhite;
+    text-shadow: 8px 4px 4px rgba(253, 0, 0, 0.2);
+}
+
+
+.temperaturedisplay .temp {
+    font-size: 10rem;
+    font-family: 'Abril Fatface', serif;
+}
+
+.temperaturedisplay .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.temperaturedisplay .description-img {
+    height: 100px;
+    width: 100px;
+}
+
+.temperaturedisplay .description span {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.feels-like {
+    font-family: 'Merriweather', serif;
+}
+
+.additionaldata {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    color: antiquewhite;
+    gap: 40px;
+}
+
+.winddisplay,
+.humiditydisplay,
+.visibilitydisplay {
+    background-color: #c7417b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 15px;
+    padding: 30px 20px;
+    box-shadow: 12px 12px 2px 1px rgba(188, 95, 250, 0.2);
+    font-family: 'Merriweather', serif;
+}
+
+.winddisplay div,
+.humiditydisplay div,
+.visibilitydisplay div {
+    text-align: center;
+}
+
+.additionaldata img {
+    height: 50px;
+    width: 50px;
+}
+
+@media only screen and (max-height: 900px) {
+    .container {
+        width: 60vw;
+        height: auto;
+        padding: 20px 30px;
+        box-shadow: 6px 6px 1px 1px rgba(155, 139, 228, 0.2);
+    }
+
+    .city-date {
+        margin-top: 20px;
+        gap: 0px;
+    }
+
+    .city-date .city {
+        font-size: 1.5rem;
+    }
+
+    .city-date .date {
+        padding: 0px;
+    }
+
+    .temperaturedisplay .description-img {
+        height: 90px;
+        width: 90px;
+    }
+
+    .temperaturedisplay .temp {
+        font-size: 8.5rem;
+    }
+
+    .additionaldata {
+        /* margin-top: 10px; */
+        gap: 15px;
+        /* flex-direction: column; */
+    }
+
+    .winddisplay,
+    .humiditydisplay,
+    .visibilitydisplay {
+        /* flex-direction: row; */
+        gap: 10px;
+        border-radius: 15px;
+        padding: 20px 20px;
+        box-shadow: 6px 6px 1px 1px rgba(188, 95, 250, 0.2);
+    }
+}
+
+
+
+@media only screen and (max-height: 730px) {
+    .temperaturedisplay .description-img {
+        height: 70px;
+        width: 70px;
+    }
+
+    .temperaturedisplay .temp {
+        font-size: 3rem;
+    }
+
+    .additionaldata {
+        margin-top: 25px;
+        gap: 0px;
+    }
+
+    .winddisplay,
+    .humiditydisplay,
+    .visibilitydisplay {
+        font-size: 10px;
+        gap: 10px;
+        border-radius: 15px;
+        padding: 30px 30px;
+        box-shadow: 6px 6px 1px 1px rgba(188, 95, 250, 0.2);
+    }
+
+    .additionaldata img {
+        height: 30px;
+        width: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        width: 60vw;
+        height: auto;
+        padding: 20px 30px;
+        box-shadow: 6px 6px 1px 1px rgba(155, 139, 228, 0.2);
+    }
+
+    .city-date {
+        margin-top: 20px;
+        gap: 0px;
+    }
+
+    .city-date .city {
+        font-size: 1.5rem;
+    }
+
+    .city-date .date {
+        padding: 0px;
+    }
+
+    .temperaturedisplay .description-img {
+        height: 90px;
+        width: 90px;
+    }
+
+    .temperaturedisplay .temp {
+        font-size: 8.5rem;
+    }
+
+    .additionaldata {
+        margin-top: 10px;
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    .winddisplay,
+    .humiditydisplay,
+    .visibilitydisplay {
+        flex-direction: row;
+        gap: 10px;
+        border-radius: 15px;
+        padding: 10px 10px;
+        box-shadow: 6px 6px 1px 1px rgba(188, 95, 250, 0.2);
+    }
+}
+
+
+@media only screen and (max-height: 640px) {
+    input[type="text"] {
+        height: 30px;
+    }
+    
+    .search-btn {
+        height: 30px;
+        width: 30px;
+    }
+
+    .temperaturedisplay .description-img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .city-date {
+        margin-top: 10px;
+        gap: 0px;
+    }
+
+    .city-date .date {
+        padding: 0px;
+        font-size: 0.8rem;
+    }
+
+    .city-date .city {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .search-form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    input[type="text"] {
+        height: 60px;
+        width: 100%;
+    }
+    
+    .search-btn {
+        margin-top: 10px;
+        height: 50px;
+        width: 50%;
+    }
+
+    .temperaturedisplay .description-img {
+        height: 60px;
+        width: 60px;
+    }
+
+    .temperaturedisplay .temp {
+        font-size: 6rem;
+    }
+
+    .additionaldata {
+        margin-top: 35px;
+    }
+
+}
+
+@media only screen and (max-height: 870px) {
+    .additionaldata {
+        margin-top: 25px;
+    }
+}
+
+
+@media only screen and (max-height: 800px) {
+    .additionaldata {
+        font-size: 0.8rem;
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (max-height: 780px) {
+    .additionaldata {
+        font-size: 0.8rem;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .city-date .date {
+        padding: 0px;
+        font-size: 0.8rem;
+    }
+
+    .city-date .city {
+        font-size: 1rem;
+    }
+
+    .additionaldata {
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (max-height: 845px) {
+
+    .container {
+        height: auto;
+    }
+
+    .additionaldata {
+        font-size: 0.8rem;
+        margin-top: 20px;
+    }
+
+    .additionaldata img {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+@media only screen and (max-height: 825px) {
+    .container {
+        height: auto    ;
+    }
+}
+
+@media only screen and (max-height: 780px) {
+    input[type="text"] {
+        padding: 15px;
+    }
+    
+    .search-btn {
+        padding: 10px;
+    }
+
+    .temperaturedisplay .description span {
+        font-size: 1rem;
+    }
+
+    .temperaturedisplay .temp {
+        font-size: 5.5rem;
+    }
+
+    .additionaldata {
+        margin-top: 10px;
+    }
+}
+
+ 
