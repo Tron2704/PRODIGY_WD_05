@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="icon" type="image/x-icon" href="icons/weather-app.png">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <form class="search-form" action="">
+            <input class="inputcity" type="text" placeholder="Enter City Name" />
+            <button class="search-btn" type="submit">
+                <img src="icons/search.png" id="search-icon"alt="Search Icon" />
+            </button>
+        </form>
+        <div class="city-date">
+            <h2 class="city">Location</h2>
+            <p class="date">-- --- ----</p>
+        </div>
+        <div class="temperaturedisplay">
+            <div class="description">
+                <img class="description-img" src="icons/thermo.png" alt="Thermometer Icon" />
+                <span class="description-text">sunny</span>
+            </div>
+            <div class="temp">-°C</div>
+            <h3 class="feels-like">Feels like: -°C</h3>
+
+        </div>
+        <div class="additionaldata">
+            <div class="humiditydisplay">
+                <h3>Humidity</h3>
+                <img class="humidity-img" src="icons/humidity.png" alt="Humidity Icon" />
+                <div>
+                    <h3 class="humidity">- %</h3>
+                </div>
+            </div>
+            <div class="visibilitydisplay">
+                <h3>Visibility</h3>
+                <img class="visibility-img" src="icons/visibility.png" alt="Visibility Icon" />
+                <div>
+                    <h3 class="visibility-distance">- km</h3>
+                </div>
+            </div>
+            <div class="winddisplay">
+                <h3>Wind</h3>
+                <img class="wind-img" src="icons/wind.png" alt="Wind Icon" />
+                <div>
+                    <h3 class="wind-speed">- km/h</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
